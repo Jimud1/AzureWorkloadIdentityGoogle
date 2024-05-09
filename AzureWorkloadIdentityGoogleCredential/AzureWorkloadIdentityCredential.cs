@@ -1,5 +1,4 @@
 ﻿using Azure.Core;
-using AzureWorkloadIdentityGoogleCredential;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Auth.OAuth2.Responses;
 using Google.Apis.CloudSecurityToken.v1;
@@ -8,15 +7,15 @@ using Google.Apis.IAMCredentials.v1;
 using Google.Apis.IAMCredentials.v1.Data;
 using Google.Apis.Services;
 
-namespace Host.Server.Googles;
+namespace AzureWorkloadIdentityGoogleCredential;
 
-public class AzureWorkloadIdentityGoogleCredential : ServiceCredential
+public class AzureWorkloadIdentityCredential : ServiceCredential
 {
     private readonly TokenCredential _azureCredential;
     private readonly CloudSecurityTokenService _cloudSecurityTokenService;
     private readonly WorkloadIdentityConfig _workloadIdentityConfig;
 
-    public AzureWorkloadIdentityGoogleCredential(
+    public AzureWorkloadIdentityCredential(
         TokenCredential azureCredential,
         CloudSecurityTokenService cloudSecurityTokenService,
         WorkloadIdentityConfig workloadIdentityConfig) : base(new Initializer(GoogleAuthConsts.TokenUrl))

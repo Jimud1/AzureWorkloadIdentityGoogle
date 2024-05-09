@@ -11,4 +11,4 @@ step 2 to use
 var workloadConfig = configuration.GetSection(nameof(WorkloadIdentityConfig)).Get<WorkloadIdentityConfig>() ??
     throw new InvalidOperationException("WorkloadIdentityConfig has not been set");
 
-var googleCredential = new AzureWorkloadIdentityGoogleCredential(azureCredential, new CloudSecurityTokenService(), workloadConfig);
+var googleCredential = new AzureWorkloadIdentityGoogleCredential(new DefaultAzureCredential(), new CloudSecurityTokenService(), workloadConfig);

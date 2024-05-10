@@ -1,4 +1,4 @@
-# AzureWorkloadIdentityGoogleCredential
+# AzureWorkloadIdentityGoogle
 Azure to google workload identity federation
 Implement azure to google workload identity federation 
 Described in the document below

@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>Azure workload identity google credential</Title>
+    <Company>J.R.R. Hood solutions</Company>
+    <Authors>James Hood</Authors>
+    <Description>Azure to google workload identity federation Implement azure to google workload identity federation. Described in the document below
+
+https://cloud.google.com/iam/docs/workload-identity-federation-with-other-clouds</Description>
+    <PackageProjectUrl>https://github.com/Jimud1/AzureWorkloadIdentityGoogleCredential</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Jimud1/AzureWorkloadIdentityGoogleCredential</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>azure; google; workload; identity;</PackageTags>
+    <PackageVersion>$([System.DateTime]::Now.ToString("yyyy.MM.dd.HHmmss"))</PackageVersion>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <FileVersion>1.0.0.1</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Core" Version="1.39.0" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.68.0" />
+    <PackageReference Include="Google.Apis.CloudSecurityToken.v1" Version="1.68.0.3408" />
+    <PackageReference Include="Google.Apis.IAMCredentials.v1" Version="1.68.0.3344" />
+  </ItemGroup>
+
+</Project>

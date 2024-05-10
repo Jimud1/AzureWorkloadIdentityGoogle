@@ -1,9 +1,10 @@
 Step 1 register WorkloadIdentityConfig in your appsettings.json
+
 "WorkloadIdentityConfig": {
-  "AzureScope": "api://app-id-uri",
-  "GcpStsAudience": "//iam.googleapis.com/projects/{PROJECT_NUMBER}}/locations/global/workloadIdentityPools/{POOL}/providers/{PROVIDER}",
-  "GcpScopes": [ "https://www.googleapis.com/auth/androidpublisher" ],
-  "GcpServiceAccountEmail": "email-services-account-to-impersonate.iam.gserviceaccount.com"
+	"AzureScope": "api://app-id-uri",
+	"GcpStsAudience": "//iam.googleapis.com/projects/{PROJECT_NUMBER}}/locations/global/workloadIdentityPools/{POOL}/providers/{PROVIDER}",
+	"GcpScopes": [ "https://www.googleapis.com/auth/androidpublisher" ],
+	"GcpServiceAccountEmail": "email-services-account-to-impersonate.iam.gserviceaccount.com"
 }
 
 step 2 to use

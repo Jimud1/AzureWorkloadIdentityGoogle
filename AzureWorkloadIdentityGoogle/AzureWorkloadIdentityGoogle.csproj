@@ -16,7 +16,7 @@ https://cloud.google.com/iam/docs/workload-identity-federation-with-other-clouds
     <RepositoryType>git</RepositoryType>
     <PackageTags>azure; google; workload; identity;</PackageTags>
     <PackageVersion>$([System.DateTime]::Now.ToString("yyyy.MM.dd.HHmmss"))</PackageVersion>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <FileVersion>1.0.0.1</FileVersion>
   </PropertyGroup>
 
@@ -28,7 +28,7 @@ https://cloud.google.com/iam/docs/workload-identity-federation-with-other-clouds
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Azure.Core" Version="1.39.0" />
+    <PackageReference Include="Azure.Core" Version="1.40.0" />
     <PackageReference Include="Google.Apis.Auth" Version="1.68.0" />
     <PackageReference Include="Google.Apis.CloudSecurityToken.v1" Version="1.68.0.3408" />
     <PackageReference Include="Google.Apis.IAMCredentials.v1" Version="1.68.0.3344" />
